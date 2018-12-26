@@ -62,4 +62,6 @@ class Projectscontroller extends Controller
 		
 		return redirect('/projects');
 	}
+
+  
 }

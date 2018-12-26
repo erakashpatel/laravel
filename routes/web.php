@@ -15,3 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('projects','Projectscontroller');
+
+Route::post('/projects/{project}/tasks','ProjectTasksController@store');
+
+
+//Route::patch('/tasks/{task}','ProjectTasksController@update');
+
+Route::post('/complated-tasks/{task}','ComplatedTaskController@store');
+
+Route::delete('/complated-tasks/{task}','ComplatedTaskController@destroy');

@@ -19,6 +19,13 @@
             .menu .menu-list li {
             display: inline-block;
             }
+            .tasks{
+
+                margin-top: 10px;
+            }
+            .is-complated{
+                text-decoration: line-through;
+            }
         </style>
         <!-- Styles -->
       
@@ -36,7 +43,7 @@
                     <li><a href="/projects">Projects</a></li>
                   
                 </div>
-                 <div class="title m-b-md">
+                 <div class="">
                     @yield('content')
                 </div>
             </div>
